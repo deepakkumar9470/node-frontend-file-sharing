@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+    <title>dShare-easy file sharing</title>
+</head>
+<body>
+
+     <section class="upload-div">
+            
+            <div class="drop-zone">
+                <div class="icon-container">
+                    <img src="images/upload2.svg" class="center" alt="upload" draggable="false"> 
+                    <img src="images/upload2.svg" class="left" alt="upload" draggable="false"> 
+                    <img src="images/upload2.svg" class="right" alt="upload" draggable="false"> 
+                </div>
+                 <input type="file" name="fileInput" id="fileInput">
+                <div class="text-upload">
+                   Drop your files here, or <span class="browsebtn">browse</span>
+                </div>
+            </div>
+         
+
+         <div class="progress-container">
+            <div class="bg-progress"></div>
+
+             <div class="inner-container">
+                <div class="status">Uploading...</div>
+                <div class="percent-container">
+                 <span class="percentage" id="progressPercent">0</span>%
+                </div>
+                <div class="progress-bar"></div>
+             </div>
+            
+         </div>
+
+            <div class="share-container">
+               <p class="linktext">Link expires in 24 hrs</p>
+               <div class="input-container">
+                  <input type="text" name="shareLink" id="fileUrl">
+                  <img src="images/copy.svg" id="copyBtn" alt="copy">
+               </div>
+               <p class="linktext">or Send via email</p>
+               <div class="email-container">
+                  <form action="" id="formId">
+                     <div class="field">
+                        <label for="email">Your email</label>
+                       <input type="email" name="to_email" id="sender" required>
+                     </div>
+     
+                     <div class="field">
+                        <label for="email">Reciever's email</label>
+                       <input type="email" name="from_email" id="reciever" required>
+                     </div>
+
+                     <button type="submit">Send</button>
+                  </form>
+                </div> 
+            </div>
+            
+            
+     </section>
+         <div class="bg-upload"></div>
+         <div class="toast">Copy to clipboard</div>    
+
+  <script src="js/index.js"></script>
+</body>
+</html>
